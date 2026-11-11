@@ -4,87 +4,107 @@ import {
   Heart, Search, Home, Library, Plus, ListMusic, Mic2, Sparkles, SlidersHorizontal
 } from 'lucide-react';
 
-// Sample Data Catalog
+// Catalog with Popular Global & Brazilian Hits
 const INITIAL_TRACKS = [
   {
     id: '1',
-    title: 'Midnight Horizon',
-    artist: 'Neon Dreams',
-    album: 'Cybernetic Echoes',
-    duration: 215,
-    genre: 'Eletrônica',
+    title: 'Blinding Lights',
+    artist: 'The Weeknd',
+    album: 'After Hours',
+    duration: 200,
+    genre: 'Pop',
     cover: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&auto=format&fit=crop&q=80',
     audioUrl: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=synthwave-80s-110045.mp3',
     lyrics: [
-      { time: 0, text: '[Instrumental Intro]' },
-      { time: 15, text: 'Riding through the neon city lights' },
-      { time: 28, text: 'Shadows fade into the midnight skies' },
-      { time: 42, text: 'Feel the rhythm of the cyber beat' },
-      { time: 58, text: 'Electric pulses beneath our feet' },
-      { time: 75, text: '[Synth Solo]' },
-      { time: 105, text: 'Lost in the digital frequency' },
-      { time: 120, text: 'You and me in perfect harmony' }
+      { time: 0, text: '[Synth Intro]' },
+      { time: 15, text: "I've been on my own for long enough" },
+      { time: 27, text: "Maybe you can show me how to love, maybe" },
+      { time: 40, text: "I'm running out of time" },
+      { time: 52, text: "'Cause I can see the sun light up the sky" },
+      { time: 70, text: '[Refrão Sintético]' }
     ]
   },
   {
     id: '2',
-    title: 'Velocity Pulse',
-    artist: 'Aetheris',
-    album: 'Quantum Shift',
-    duration: 184,
-    genre: 'Rock',
-    cover: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=energetic-rock-10110.mp3',
-    lyrics: [
-      { time: 0, text: 'Turn up the drive, ignite the spark' },
-      { time: 20, text: 'We leave a trail across the dark' },
-      { time: 40, text: 'Breaking barriers speed of sound' },
-      { time: 65, text: 'We are the lost now finally found' }
-    ]
-  },
-  {
-    id: '3',
-    title: 'Solar Flare Groove',
-    artist: 'Luna Eclipse',
-    album: 'Starlight Avenue',
-    duration: 198,
+    title: 'Shape of You',
+    artist: 'Ed Sheeran',
+    album: '÷ (Divide)',
+    duration: 233,
     genre: 'Pop',
     cover: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=80',
     audioUrl: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=funky-dance-10023.mp3',
     lyrics: [
-      { time: 0, text: 'Sunlight fading into gold' },
-      { time: 18, text: 'Stories waiting to be told' },
-      { time: 35, text: 'Dance beneath the glowing sky' },
-      { time: 55, text: 'Watch the cosmic wonders fly' }
+      { time: 0, text: '[Marimba Intro]' },
+      { time: 10, text: "The club isn't the best place to find a lover" },
+      { time: 22, text: "So the bar is where I go" },
+      { time: 35, text: "Me and my friends at the table doing shots" },
+      { time: 50, text: "I'm in love with the shape of you" }
+    ]
+  },
+  {
+    id: '3',
+    title: 'Starboy',
+    artist: 'The Weeknd ft. Daft Punk',
+    album: 'Starboy',
+    duration: 230,
+    genre: 'Eletrônica',
+    cover: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&auto=format&fit=crop&q=80',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=energetic-rock-10110.mp3',
+    lyrics: [
+      { time: 0, text: '[Beat Intro]' },
+      { time: 14, text: "I'm tryna put you in the worst mood, ah" },
+      { time: 28, text: "P1 cleaner than your church shoes, ah" },
+      { time: 45, text: "Look what you've done" },
+      { time: 60, text: "I'm a starboy" }
     ]
   },
   {
     id: '4',
-    title: 'Smooth Horizon',
-    artist: 'The Velvet Trio',
-    album: 'Late Night Sessions',
-    duration: 240,
-    genre: 'Jazz',
-    cover: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500&auto=format&fit=crop&q=80',
+    title: 'As It Was',
+    artist: 'Harry Styles',
+    album: "Harry's House",
+    duration: 167,
+    genre: 'Pop',
+    cover: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&auto=format&fit=crop&q=80',
     audioUrl: 'https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc069e2b10.mp3?filename=jazz-lounge-11082.mp3',
     lyrics: [
-      { time: 0, text: '[Saxophone Intro]' },
-      { time: 30, text: 'Whispers in the quiet room' },
-      { time: 60, text: 'Scent of coffee and perfume' }
+      { time: 0, text: "Come on, Harry, we wanna say goodnight to you" },
+      { time: 12, text: "Holdin' me back" },
+      { time: 25, text: "Gravity's holdin' me back" },
+      { time: 42, text: "You know it's not the same as it was" }
     ]
   },
   {
     id: '5',
-    title: 'Sertão Moderno',
-    artist: 'Violeiros da Serra',
-    album: 'Caminhos do Sol',
-    duration: 205,
+    title: 'Evidências',
+    artist: 'Chitãozinho & Xororó',
+    album: 'Cowboy do Asfalto',
+    duration: 279,
     genre: 'Sertanejo',
     cover: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&auto=format&fit=crop&q=80',
     audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_51726a42ec.mp3?filename=acoustic-bossa-10330.mp3',
     lyrics: [
-      { time: 0, text: 'Poeira subindo na estrada real' },
-      { time: 22, text: 'Violão tocando no meu quintal' }
+      { time: 0, text: '[Intro no Piano]' },
+      { time: 18, text: 'Quando eu digo que deixei de te amar' },
+      { time: 32, text: 'É porque eu te amo' },
+      { time: 55, text: 'E nessa loucura de dizer que não te quero' },
+      { time: 75, text: 'Vou negando as aparências, disfarçando as evidências' }
+    ]
+  },
+  {
+    id: '6',
+    title: 'Nosso Quadro',
+    artist: 'Ana Castela',
+    album: 'Nosso Quadro',
+    duration: 173,
+    genre: 'Sertanejo',
+    cover: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80',
+    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=funky-dance-10023.mp3',
+    lyrics: [
+      { time: 0, text: '[Sanfona Intro]' },
+      { time: 12, text: 'Cê me fala que não quer nada sério' },
+      { time: 30, text: 'Mas quando a noite chega a gente se encontra' },
+      { time: 50, text: 'E o nosso quadro na parede continua lá' }
     ]
   }
 ];
@@ -107,12 +127,12 @@ export default function SonicPulseApp() {
   const [isMuted, setIsMuted] = useState(false);
   const [isShuffle, setIsShuffle] = useState(false);
   const [isRepeat, setIsRepeat] = useState(false);
-  const [likedTrackIds, setLikedTrackIds] = useState(['1', '3']);
+  const [likedTrackIds, setLikedTrackIds] = useState(['1', '3', '5']);
 
   // Playlists
   const [userPlaylists, setUserPlaylists] = useState([
-    { id: 'p1', name: 'Favoritas do Fim de Semana', trackIds: ['1', '2', '3'] },
-    { id: 'p2', name: 'Foco & Trabalho', trackIds: ['4'] }
+    { id: 'p1', name: 'Favoritas do Fim de Semana', trackIds: ['1', '2', '5'] },
+    { id: 'p2', name: 'Foco & Trabalho', trackIds: ['3', '4'] }
   ]);
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
 
@@ -120,7 +140,7 @@ export default function SonicPulseApp() {
 
   const currentTrack = tracks[currentTrackIndex] || tracks[0];
 
-  // Media Controls wrapped with useCallback
+  // Media Controls
   const handleNextTrack = useCallback(() => {
     let nextIndex;
     if (isShuffle) {
@@ -277,7 +297,7 @@ export default function SonicPulseApp() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col overflow-y-auto bg-gradient-to-b from-[#181818] to-[#0D0D0D] p-6">
+      <main className="flex-1 flex flex-col overflow-y-auto bg-gradient-to-b from-[#181818] to-[#0D0D0D] p-6 pb-28">
         {/* Top Search / Category Header */}
         {activeTab === 'search' && (
           <div className="mb-6 flex flex-col gap-4">
@@ -335,9 +355,9 @@ export default function SonicPulseApp() {
             {/* Banner Section */}
             <div className="relative rounded-2xl p-8 mb-8 overflow-hidden bg-gradient-to-r from-[#0066FF] to-[#FF0033]">
               <div className="relative z-10 max-w-lg">
-                <span className="text-xs uppercase font-bold tracking-widest text-white/80">Destaque da Semana</span>
-                <h1 className="text-4xl font-extrabold mt-1 mb-3">Cybernetic Echoes</h1>
-                <p className="text-sm text-white/90 mb-6">Ouça o novo álbum sintético de Neon Dreams com exclusivo suporte a áudio espacial.</p>
+                <span className="text-xs uppercase font-bold tracking-widest text-white/80">Destaque Global</span>
+                <h1 className="text-4xl font-extrabold mt-1 mb-3">Blinding Lights</h1>
+                <p className="text-sm text-white/90 mb-6">Ouça o maior hit mundial de The Weeknd na plataforma SonicPulse com áudio em alta definição.</p>
                 <button
                   onClick={() => { setCurrentTrackIndex(0); setIsPlaying(true); }}
                   className="bg-white text-black px-6 py-3 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition shadow-lg"
@@ -349,7 +369,7 @@ export default function SonicPulseApp() {
 
             {/* Track Catalog */}
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <SlidersHorizontal className="w-5 h-5 text-[#00F0FF]" /> Tocadas Recentemente
+              <SlidersHorizontal className="w-5 h-5 text-[#00F0FF]" /> Mais Tocadas
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {filteredTracks.map(track => (
@@ -375,7 +395,7 @@ export default function SonicPulseApp() {
 
       {/* Synchronized Lyrics Drawer Right */}
       {showLyrics && (
-        <aside className="w-80 bg-[#121212] border-l border-[#1E1E1E] p-6 flex flex-col overflow-y-auto">
+        <aside className="w-80 bg-[#121212] border-l border-[#1E1E1E] p-6 flex flex-col overflow-y-auto pb-28">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-lg font-bold flex items-center gap-2"><Mic2 className="w-5 h-5 text-[#00F0FF]" /> Letra</h2>
             <button onClick={() => setShowLyrics(false)} className="text-xs text-[#B3B3B3] hover:text-white">Fechar</button>
