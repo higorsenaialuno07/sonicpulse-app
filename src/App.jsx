@@ -14,7 +14,7 @@ const INITIAL_TRACKS = [
     duration: 200,
     genre: 'Pop',
     cover: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=synthwave-80s-110045.mp3',
+    audioUrl: '/music/blinding-lights.mp3',
     lyrics: [
       { time: 0, text: '[Synth Intro]' },
       { time: 15, text: "I've been on my own for long enough" },
@@ -32,7 +32,7 @@ const INITIAL_TRACKS = [
     duration: 233,
     genre: 'Pop',
     cover: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=funky-dance-10023.mp3',
+    audioUrl: '/music/shape-of-you.mp3',
     lyrics: [
       { time: 0, text: '[Marimba Intro]' },
       { time: 10, text: "The club isn't the best place to find a lover" },
@@ -49,7 +49,7 @@ const INITIAL_TRACKS = [
     duration: 230,
     genre: 'Eletrônica',
     cover: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=energetic-rock-10110.mp3',
+    audioUrl: '/music/starboy.mp3',
     lyrics: [
       { time: 0, text: '[Beat Intro]' },
       { time: 14, text: "I'm tryna put you in the worst mood, ah" },
@@ -66,7 +66,7 @@ const INITIAL_TRACKS = [
     duration: 167,
     genre: 'Pop',
     cover: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc069e2b10.mp3?filename=jazz-lounge-11082.mp3',
+    audioUrl: '/music/as-it-was.mp3',
     lyrics: [
       { time: 0, text: "Come on, Harry, we wanna say goodnight to you" },
       { time: 12, text: "Holdin' me back" },
@@ -82,7 +82,7 @@ const INITIAL_TRACKS = [
     duration: 279,
     genre: 'Sertanejo',
     cover: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_51726a42ec.mp3?filename=acoustic-bossa-10330.mp3',
+    audioUrl: '/music/evidencias.mp3',
     lyrics: [
       { time: 0, text: '[Intro no Piano]' },
       { time: 18, text: 'Quando eu digo que deixei de te amar' },
@@ -99,7 +99,7 @@ const INITIAL_TRACKS = [
     duration: 173,
     genre: 'Sertanejo',
     cover: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80',
-    audioUrl: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=funky-dance-10023.mp3',
+    audioUrl: '/music/nosso-quadro.mp3',
     lyrics: [
       { time: 0, text: '[Sanfona Intro]' },
       { time: 12, text: 'Cê me fala que não quer nada sério' },
